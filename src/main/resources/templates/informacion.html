@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Apolo - Contrata tu artista</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- Navegación  -->
+        
+        <div th:if="${session.usuariosession != null}" ><nav th:replace="/fragments/navbaruser :: nav"></nav> </div>
+      
+        <div th:if="${session.usuariosession == null}" ><nav th:replace="/fragments/navbar :: nav" ></nav> </div>
+
+        
+    
+    <br>
+    
+    <h2><b> ¿Quienes somos? Conócenos mejor. </b></h2>
+    
+    <br>
+    
+    <h3> Nos presentamos, somos Apolo, una página web destinada a mostrar conjuntos musicales y artistas independientes con
+        el objetivo de musicalizar ciertos eventos disponibles en tu región.
+        Nuestro propósito es muy simple: <b> buscamos promocionar a nuestros artistas emergentes en la región para musicalizar eventos. </b>
+    </h3>
+    <h3> Lo que tienes que hacer, es muy sencillo, empieza con registrarte como usuario, y listo, ya podés elegir a tu artista preferido
+        para que musicalice tu evento. Podrás encontrar a los mismos acorde a tu localidad, así como el evento destinado, o el género músical.
+    </h3> 
+    
+    <br>
+    
+    <h4> ¿Qué estás esperando para ir a conocer a nuestros artistas? </h4>
+    <a href="\mis-artistas" class="btn btn-primary me-3" role="button" style="background-color: #007EA7"> Ir a Artistas </a>
+    
+    <br>
+    <br>
+    <br>
+    
+    <h5> ¿Todavía te quedaste con más dudas? Ve a los siguientes enlaces para conseguir más información acerca de nuestra plataforma. </h5>
+    <a href="\preguntasFrecuentes" class="btn btn-link px-3 me-2" role="button" style="color: #007EA7"> Preguntas frecuentes </a>
+    <a href="\políticasPrivacidad" class="btn btn-link px-3 me-2" role="button" style="color: #007EA7"> Términos y condiciones </a>
+    
+    <br>
+    <br>
+    <br>
+    
+   <!-- Footer -->
+        <div th:replace="/fragments/footer :: div"></div>
+
+  
+
+  <!-- JavaScript Librerias -->
+        <script th:replace="/fragments/jslib :: script"></script>
+</body>
+
+</html>
